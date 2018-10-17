@@ -4,8 +4,11 @@ $("#letterForm").submit(function(event) {
   console.log(nameInput);
   var foodInput = $("input#inputFood").val();
 
-  $(".capsName").text(nameInput).toUpperCase();
-  $(".capsFood").text(foodInput);
+
+  var upperName = nameInput.toUpperCase();
+  $(".capsName").text(upperName);
+  var upperFood= foodInput.toUpperCase();
+  $(".capsFood").text(upperFood);
 
   $("#shout").show();
 
